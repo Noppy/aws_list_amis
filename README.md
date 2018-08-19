@@ -28,9 +28,9 @@ aws ec2 describe-instances
 ```
 git clone https://github.com/Noppy/aws_list_amis.git
 ```
-### move the shell script to a suitable directory
+### copy the shell script to a suitable directory
 ```
-mv aws_list_amis/list_amis.sh DEST_DIRECTORY_PATH
+cp aws_list_amis/list_amis.sh DEST_DIRECTORY_PATH
 ```
 ## Usage
 ### Get AMI Name
