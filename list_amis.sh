@@ -99,23 +99,23 @@ do
             FS = ": ";
 
             # set variables
-            ImageID="\"N/A\",";
-            Virtual="\"N/A\",";
-            Hypervisor="\"N/A\",";
-            Arch="\"N/A\",";
-            ImageType="\"N/A\",";
-            Name="\"N/A\",";
-            Desc="\"N/A\",";
+            ImageID="\"N/A\"";
+            Virtual="\"N/A\"";
+            Hypervisor="\"N/A\"";
+            Arch="\"N/A\"";
+            ImageType="\"N/A\"";
+            Name="\"N/A\"";
+            Desc="\"N/A\"";
 
         }
-        /"N8Th5tGkgiXXXID":/   { ImageID = $2; }
-        /"N8Th5tGkgiXXXVirt":/ { Virtual = $2; }
-        /"N8Th5tGkgiXXXHyper":/{ Hypervisor = $2; }
-        /"N8Th5tGkgiXXXArch":/ { Arch = $2; }
-        /"N8Th5tGkgiXXXType":/ { ImageType = $2; }
-        /"N8Th5tGkgiXXXName":/ { Name = $2; }
-        /"N8Th5tGkgiXXXDesc":/ { Desc = $2; }
+        /"N8Th5tGkgiXXXID":/   { ImageID = $2;    sub(/",[ \t]*$/, "\"", ImageID); }
+        /"N8Th5tGkgiXXXVirt":/ { Virtual = $2;    sub(/",[ \t]*$/, "\"", Virtual); }
+        /"N8Th5tGkgiXXXHyper":/{ Hypervisor = $2; sub(/",[ \t]*$/, "\"", Hypervisor); }
+        /"N8Th5tGkgiXXXArch":/ { Arch = $2;       sub(/",[ \t]*$/, "\"", Arch); }
+        /"N8Th5tGkgiXXXType":/ { ImageType = $2;  sub(/",[ \t]*$/, "\"", ImageType); }
+        /"N8Th5tGkgiXXXName":/ { Name = $2;       sub(/",[ \t]*$/, "\"", Name); }
+        /"N8Th5tGkgiXXXDesc":/ { Desc = $2;       sub(/",[ \t]*$/, "\"", Desc); }
         END{
-            print "\""region_descript"\",\""region"\","ImageID""Virtual""Hypervisor""Arch""ImageType""Desc
+            print "\""region_descript"\",\""region"\","ImageID","Virtual","Hypervisor","Arch","ImageType","Desc
         }';
 done
