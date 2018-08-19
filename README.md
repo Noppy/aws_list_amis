@@ -2,7 +2,7 @@
 list_amis.sh  :list Amazon Machine Images ImageID
 # SYNOPSYS
 ```
-liste_amis.sh "AMI NAME"
+list_amis.sh "AMI NAME"
 ```
 # DESCRIPTION
 This shell script queries AMI-ID at each regions for the specified `AMI NAME`, and output CSV file format to STDOUT.
