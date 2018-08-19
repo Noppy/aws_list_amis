@@ -1,5 +1,5 @@
 # Name
-list_amis.sh  :list Amazon Machine Images ImageID
+list_amis.sh  :list Amazon Machine Images ImageID and outpu CSV format to STDOUT.
 # SYNOPSYS
 ```
 list_amis.sh "AMI NAME"
