@@ -34,8 +34,9 @@ mv aws_list_amis/list_amis.sh DEST_DIRECTORY_PATH
 ```
 ## Usage
 ### Get AMI Name
-Check and get the name of the AMI which you would like to search.
-The following figure is an example to confirm with the management console.
+Check and get the name of the AMI which you would like to search.  
+The following figure is an example to confirm with the management console  
+(Note!: Use "Community AMIs" tab).
 ![check AMI name by Management Console](https://user-images.githubusercontent.com/2317667/44307780-b850b200-a3e3-11e8-8f69-442a69193cc5.png)
 ### Execute the shell script
 ```
