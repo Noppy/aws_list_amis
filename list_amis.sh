@@ -20,7 +20,7 @@
 #  SYNOPSYS
 #     $ list_amis.sh "AMI NAME"
 #  DESCRIPTION
-#     This shell script queries AMI-ID at each regions for the specified
+#     This shell script queries AMI ImageID at each regions for the specified
 #     AMI NAME, and output CSV file format to STDOUT.
 #
 #     AMI NAME is like 'amzn2-ami-hvm-2.0.20180622.1-x86_64-gp',

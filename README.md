@@ -1,5 +1,5 @@
 # Name
-list_amis.sh  :list Amazon Machine Image(AMI) IDs
+list_amis.sh  :list Amazon Machine Images ImageID
 # SYNOPSYS
 ```
 liste_amis.sh "AMI NAME"
