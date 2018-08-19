@@ -35,7 +35,8 @@ mv aws_list_amis/list_amis.sh DEST_DIRECTORY_PATH
 ## Usage
 - Get AMI Name
 Check and get the name of the AMI which you would like to search.
-https://github.com/Noppy/aws_list_amis/issues/1#issue-351889543
+The following figure is an example to confirm with the management console.
+![check AMI name by Management Console](https://github.com/Noppy/aws_list_amis/issues/1#issue-351889543)
 - Execute the shell script
 ```
 ./list_amis.sh "Microsoft Windows Server 2012 R2 with SQL Server 2016 Web" > Win_SQL_WebEdition.csv
