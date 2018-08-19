@@ -116,6 +116,6 @@ do
         /"N8Th5tGkgiXXXName":/ { Name = $2;       sub(/",[ \t]*$/, "\"", Name); }
         /"N8Th5tGkgiXXXDesc":/ { Desc = $2;       sub(/",[ \t]*$/, "\"", Desc); }
         END{
-            print "\""region_descript"\",\""region"\","ImageID","Virtual","Hypervisor","Arch","ImageType","Desc
+            print "\""region_descript"\",\""region"\","ImageID","Virtual","Hypervisor","Arch","ImageType","Name","Desc
         }';
 done
