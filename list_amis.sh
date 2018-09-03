@@ -83,7 +83,6 @@ do
 
     #Query by aws cli
     aws --region ${code[$i]} --output json ec2 describe-images \
-        --owners amazon \
         --filters "Name=name","Values=${AMI_NAME}" \
         --query "Images[*].{N8Th5tGkgiXXXID:ImageId,
                             N8Th5tGkgiXXXVirt:VirtualizationType,
